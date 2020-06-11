@@ -3,15 +3,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return "Flask Test Successfully"
+    return ("Flask Test Successfully")
 
-def main():
-    print "test1"
-
-
-
-
-
-    
-    
-    
+if __name__ == '__main__':
+     app.run(debug=True)
